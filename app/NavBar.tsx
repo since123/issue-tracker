@@ -6,7 +6,6 @@ import { AiFillBug } from "react-icons/ai";
 import classnames from "classnames";
 const NavBar = () => {
   const currentPath = usePathname();
-  console.log(currentPath);
   const links = [
     { label: "Dashboard", href: "/" },
     { label: "Issues", href: "/issues" },
@@ -27,7 +26,8 @@ const NavBar = () => {
               "hover:text-zinc-800 transition-colors": true,
             })}
           >
-            {link.label}{" "}
+            {/* {link.label}{" "} */}
+            {link.label}
           </Link>
         ))}
       </ul>
